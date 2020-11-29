@@ -85,7 +85,7 @@
 				$time=date('h:i:s');
 				$logWords="[LOG] Transfer ".$fromAcc." to ".$toAcc." for ".$amount;
 				$stmt=$conn->stmt_init();
-				$stmt=$conn->prepare("Insert into Deposit_Log values(?,?,?,?)");
+				$stmt=$conn->prepare("Insert into Log values(?,?,?,?)");
 				$stmt->bind_param('ssss', $_SESSION['user_id'], $logWords, $date, $time);
 				$stmt->execute();
 				

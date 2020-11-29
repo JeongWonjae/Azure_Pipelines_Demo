@@ -57,7 +57,7 @@
 	<?php /*
 				echo "<div class='description'>";
 				$stmt=$conn->stmt_init();
-				$stmt=$conn->prepare("Select * from Deposit_Log where ID=?");
+				$stmt=$conn->prepare("Select * from Log where ID=?");
 				$stmt->bind_param('s', $_SESSION['user_id']);
 				$stmt->execute();
 				$result=$stmt->get_result();

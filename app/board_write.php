@@ -33,7 +33,7 @@
 		if(isset($_FILES['file']))
 		{
 			$stmt=$conn->stmt_init();
-			$stmt=$conn->prepare("insert into board(ID,Title,Content,Date,Time,File_name,PW) values(?,?,?,?,?,?,?)");
+			$stmt=$conn->prepare("insert into Board(ID,Title,Content,Date,Time,File_name,PW) values(?,?,?,?,?,?,?)");
 			$stmt->bind_param('sssssss', $id, $title, $content, $date, $time, $filename, $pw);
 			
 			//file upload
@@ -41,7 +41,7 @@
 		}else //non exsit file
 		{
 			$stmt=$conn->stmt_init();
-			$stmt=$conn->prepare("insert into board(ID,Title,Content,Date,Time,PW) values(?,?,?,?,?,?)");
+			$stmt=$conn->prepare("insert into Board(ID,Title,Content,Date,Time,PW) values(?,?,?,?,?,?)");
 			$stmt->bind_param('ssssss', $id, $title, $content, $date, $time, $pw);
 		}
 		

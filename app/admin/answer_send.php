@@ -19,7 +19,7 @@
 	}else
 	{
 		$stmt=$conn->stmt_init();
-		$stmt=$conn->prepare("insert into board_reply values(?,?,?,?)");
+		$stmt=$conn->prepare("insert into Board_Reply values(?,?,?,?)");
 		$stmt->bind_param('ssss', $no, $answer, $date, $time);
 		
 		if($stmt->execute()){

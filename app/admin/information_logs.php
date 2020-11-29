@@ -23,7 +23,7 @@
 					}
 
 					$stmt=$conn->stmt_init();
-					$query="select * from Deposit_Log order by Date DESC,Time DESC";
+					$query="select * from Log order by Date DESC,Time DESC";
 					$result=$conn->query($query);
 
 					while($row=$result->fetch_assoc())

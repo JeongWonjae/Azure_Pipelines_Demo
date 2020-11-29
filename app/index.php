@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 <head>
 	<title>PHP Bank</title>
@@ -8,7 +9,7 @@
 	</style>
 </head>
 <body>
-	<?php session_start(); ?>
+	
 	
 	<img src="image/bank_main.jpg" alt="main" width="1250" height="200">
 

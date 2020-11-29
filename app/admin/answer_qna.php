@@ -22,7 +22,7 @@
 					}
 					
 					$stmt=$conn->stmt_init();
-					$stmt=$conn->prepare("select * from board where No=?");
+					$stmt=$conn->prepare("select * from Board where No=?");
 					$stmt->bind_param('s', $_GET['no']);
 					$stmt->execute();
 					$result=$stmt->get_result();
@@ -65,7 +65,7 @@
 				}
 
 				$stmt=$conn->stmt_init();
-				$stmt=$conn->prepare("select * from board_reply where No=? order by Date,Time ASC");
+				$stmt=$conn->prepare("select * from Board_Reply where No=? order by Date,Time ASC");
 				$stmt->bind_param('s', $_GET['no']);
 				$stmt->execute();
 				$result=$stmt->get_result();

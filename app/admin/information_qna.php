@@ -32,7 +32,7 @@
 						}
 
 						$stmt=$conn->stmt_init();
-						$query="select * from board order by No DESC";
+						$query="select * from Board order by No DESC";
 						$result=$conn->query($query);
 
 						while($row=$result->fetch_assoc())

@@ -191,7 +191,7 @@
 			$time=date('h:i:s');
 			$logWords="[LOG] Termination Account ".$accNum." by ".$_SESSION['user_id'];
 			$stmt=$conn->stmt_init();
-			$stmt=$conn->prepare("Insert into Deposit_Log values(?,?,?,?)");
+			$stmt=$conn->prepare("Insert into Log values(?,?,?,?)");
 			$stmt->bind_param('ssss', $_SESSION['user_id'], $logWords, $date, $time);
 			$stmt->execute();
 			
