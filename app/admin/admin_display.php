@@ -1,3 +1,6 @@
+<?php
+	session_start()
+?>
 <html>
 	<head>
 		<title>PHP Bank - Admin</title>
@@ -7,7 +10,6 @@
 	</head>
 	<body>
 		<?php
-			session_start();
 			if($_SESSION['user_id']!="admin")
 			{
 				echo "<script>alert('Your not admin. Signin to admin account.');</script>";
