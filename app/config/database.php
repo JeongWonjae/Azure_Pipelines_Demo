@@ -1,6 +1,6 @@
 <?php
-	$user="adminuser@dbserverwj";
+	$user="skaadmin@database-mysql-final";
 	$pw="abcd123456789!";
-	$host="dbserverwj.mysql.database.azure.com";
+	$host="database-mysql-final.private.mysql.database.azure.com";
 	$dbName="php_bank";
 ?>
